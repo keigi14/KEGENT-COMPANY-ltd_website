@@ -1,0 +1,584 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin: 0;
+background-color: #8caacf;
+padding: 0px;
+font-family: georgia, candara, "century gothic";
+display:flex;
+flex-direction: column;
+list-style-type: none;
+}
+
+/*the div socials css begins from his*/
+
+.motto{
+  color: #dbd9b8;
+}
+strong{
+color: #8caacf;
+}
+.socials
+ {
+  height: 40px;
+  background-color: #1F2937;
+  border: 1px solid #8caacf;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ }
+.socials ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 25px;
+}
+.socials i {
+  color: #8caacf;
+  font-size: large;
+}
+
+
+/*the next layer,div TITLES */
+
+.loc {
+height: 100px;
+padding: 0 50px;
+background-color: #fff;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+.findme{
+  width: 400px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.sub{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.findme i{
+ color: #4287f5;
+ font-size: 40px;
+}
+span{
+color: #1F2937;
+font-size: medium;
+font-weight: lighter;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sub a{
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: bolder;
+}
+a{
+  text-decoration: none;
+  color: #0349aa;
+}
+
+/*the next phase in the nav div*/
+
+.menu {
+  height: 70px;
+  background-color: #327ac2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 50px;
+  gap: 150px;
+}
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+nav a{
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #327ac2;
+  text-decoration: none;
+  font-family: poppins;
+  height: 50px;
+  gap: 10px;
+}
+nav a:hover{
+  background: #8caacf;
+  color: #fff;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+}
+nav .navigate li{
+  font-family: poppins, roboto;
+  font-size: 21px;
+  width: 100%;
+}
+nav .navigate {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+nav ul li{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+nav li:hover .dropdown li{
+  top: 0;
+  display: block;
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: column;
+}
+.dropdown li{
+  border-bottom: 2px solid #fff;
+}
+ul li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li:hover ul.dropdown{
+  display: block;
+}
+.searches{
+  width: 220px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.searches input{
+  height: 27px;
+  border-radius: 15px;
+  border: 1px solid #cbeef5;
+}
+.searches button{
+  border: 1px solid #cbeef5;
+  border-radius: 15px;
+  height: 30px;
+  width: 30px;
+}
+
+/*this separates the header and footer and we should add the css*/
+
+
+
+.ground{
+  font-family: poppin, roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  width: 100%;
+  height: 400px;
+  color:#edeff5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: linear-gradient(0deg, rgba(2, 27, 69, 0.8), rgba(2, 27, 69, 0.8)), url("../imgs/toilet\ cleanig\ materials.webp");
+  background-size: cover;
+}
+.ground h2{
+  margin: 0;
+  padding: 0;
+}
+.ground .welcome{
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.welcome::before{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  content: open-quote;
+  color: chocolate;
+  font-size: 80px;
+}
+.welcome::after{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  content: close-quote;
+  color: chocolate;
+  font-size: 80px;
+}
+
+
+/*the container2 div begins here*/
+
+
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+.explain{
+    height: 750px;
+    padding: 40px 20px;
+    margin-left: 90px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.explain h1{
+    margin-bottom: 30px;
+    border-bottom: 3px solid #327ac2;
+    padding-bottom: 0px;
+    color: #0349aa;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.explain p{
+  font-weight: 400;
+  font-size: 18px;
+  color: #14212b;
+  width: 750px;
+  text-align: start;
+
+}
+.explain img{
+    border-radius: 20px;
+}
+
+.others{
+    width: 600px;
+    margin: 40px 10px;
+}
+.servicelist{
+  box-shadow: 0 0 1em -0.6em;
+  width: 350px;
+  border-radius: 10px;
+  color: #1F2937;
+  font-size: 18px;
+
+}
+.servicelist li{
+    list-style-type: none;
+    padding-bottom: 20px;
+    color: #1F2937;
+}
+.servicelist a{
+  font-size: large;
+  font-weight: 400;
+  color: black;
+  font-family: roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.talktous{
+  width: 350px;
+  box-shadow: 0 0 1em -0.6em;
+  padding-bottom: 45px;
+  margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:15px
+}
+
+.talktous button{
+  font-size: larger;
+  color: #0349aa;
+  border-radius: 10px;
+  border: 2px solid #327ac2;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.talktous i{
+  font-weight: bolder;
+  font-size: 25px;
+}
+.talktous h2{
+  color: #1F2937;
+  font-size: 30px;
+  width: 300px;
+}
+.talktous button:hover{
+  color: #fff;
+  background-color: #7cee9e;
+}
+
+
+/*the touch div begins*/
+
+.touch{
+    padding: 50px 70px;
+    margin: 15px 60px;
+    border-radius: 20px;
+    background-color: #327ac2;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .set{
+    width: 500px;
+    margin: 0px;
+    padding: 0px;
+  
+  }
+  .set p{
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    font-size: 60px;
+    font-weight: lighter;
+  }
+  .set h2{
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: start;
+  }
+  .touch button{
+    color: #327ac2;
+    border: #dbd9b8;
+    height: 50px;
+    width: 180px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+  }
+
+
+
+  /*the beginning of a new div of packages*/
+.prices{
+  padding-top: 60px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.prices h2{
+  font-size: 25px;
+  color: #4287f5;
+  margin-bottom: 0;
+}
+.prices h3{
+  font-size: 42px;
+  color: #164987;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 17px;
+  
+}
+
+.packus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-shrink: 1;
+  padding: 50px 50px;
+}
+.packages{
+  width: 400px;
+  padding: 30px 0;
+  background-color: #edeff5;
+  margin: 0 20px;
+  box-shadow: 0 0 0.2em;
+  border-radius: 15px;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+}
+.packages h2{
+  width: 80px;
+  height: 40px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 20px;
+  background-color: #327ac2;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.packages span{
+  margin: 0 6px;
+  font-size: 20px;
+  color: #327ac2;
+  border-bottom: 3px solid #8caacf;
+}
+.packages p{
+  margin: 12px 15px;
+}
+
+.packages button{
+  background-color: #17599b;
+  margin: 0 50px;
+  color: #fff;
+  border: 2px solid #327ac2;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.packages button i{
+  color: #0349aa;
+  background-color: #fff;
+  border: 1px solid #17599b;
+  padding: 7px 7px;
+  border-radius: 6px;
+}
+
+
+
+
+/*begin of the footer*/
+
+footer .ul{
+    text-decoration: none;
+  }
+  
+  footer{
+    padding-top: 50px;
+    color: #fff;
+    background-color:#1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+  }
+  .done{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .quick{
+    border-left: 1px solid #4287f5;
+    width: 320px;
+    font-size: large;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quick h1{
+    padding: 20px 0px;
+    font-size: 29px;
+  }
+  .logobox{
+    width: 300px;
+    font-size: large;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .logobox img{
+    border: 1px solid #4878d6;
+    padding: 5px 5px;
+  }
+  .logobox ul{
+    margin: 0 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap:20px
+  }
+  .logobox i{
+    border: 1px solid #3e4c5f;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    color: #4287f5;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer a{
+    font-size: large;
+    color: #fff;
+  }
+  .list li{
+    padding-bottom: 20px;
+    list-style-type: none;
+  }
+  
+  
+  
+  /*this is the last div of the footer mapaddress*/
+  .mapaddress{
+    padding: 5px 0;
+    margin: 0 20px;
+    border-top: 1px solid #4287f5;
+    width: 1340px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 500px;
+  }
+  .mapaddress h1{
+    font-weight: 400;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mapaddress p{
+    font-size: larger;
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mapaddress i{
+    font-size: 20px;
+    color: #4287f5;
+  }
+  
+  

@@ -1,0 +1,521 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    margin: 0;
+  background-color: #8caacf;
+  padding: 0px;
+  font-family: georgia, candara, "century gothic";
+  display:flex;
+  flex-direction: column;
+  list-style-type: none;
+  }
+  
+  /*the div socials css begins from his*/
+
+
+  
+  .motto{
+    color: #dbd9b8;
+  }
+  strong{
+  color: #8caacf;
+  }
+  .socials
+   {
+    height: 40px;
+    background-color: #1F2937;
+    border: 1px solid #8caacf;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   }
+  .socials ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 25px;
+  }
+  .socials i {
+    color: #8caacf;
+    font-size: large;
+  }
+  
+  
+  /*the next layer,div TITLES */
+  
+  .loc {
+  height: 100px;
+  padding: 0 50px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .findme{
+    width: 320px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .sub{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .findme i{
+   color: #4287f5;
+   font-size: 40px;
+  }
+  span{
+  color: #1F2937;
+  font-size: medium;
+  font-weight: lighter;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .sub a{
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  a{
+    text-decoration: none;
+    color: #0349aa;
+  }
+  
+  /*the next phase in the nav div*/
+
+
+  
+  .menu {
+    height: 70px;
+    background-color: #327ac2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 50px;
+    gap: 150px;
+  }
+  nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  nav a{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #327ac2;
+    text-decoration: none;
+    font-family: poppins;
+    height: 50px;
+    gap: 10px;
+  }
+  nav a:hover{
+    background: #8caacf;
+    color: #fff;
+  }
+  nav ul{
+    list-style: none;
+    display: flex;
+  }
+  nav .navigate li{
+    font-family: poppins, roboto;
+    font-size: 21px;
+    width: 100%;
+  }
+  nav .navigate {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  nav ul li{
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  nav li:hover .dropdown li{
+    top: 0;
+    display: block;
+  }
+  
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown li{
+    border-bottom: 2px solid #fff;
+  }
+  ul li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  }
+  .searches{
+    width: 220px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .searches input{
+    height: 27px;
+    border-radius: 15px;
+    border: 1px solid #cbeef5;
+  }
+  .searches button{
+    border: 1px solid #cbeef5;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+  }
+ 
+/*this is the end of the header and i am starting the sections part*/  
+
+
+.ground{
+    font-family: poppin, roboto, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    width: 100%;
+    height: 400px;
+    color:#edeff5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: linear-gradient(0deg, rgba(2, 27, 69, 0.8), rgba(2, 27, 69, 0.8)), url("../imgs/toilet\ cleanig\ materials.webp");
+    background-size: cover;
+  }
+  .ground h2{
+    margin: 0;
+    padding: 0;
+  }
+  .ground .welcome{
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .welcome::before{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: open-quote;
+    color: chocolate;
+    font-size: 80px;
+  }
+  .welcome::after{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: close-quote;
+    color: chocolate;
+    font-size: 80px;
+  }
+  
+
+
+/*this is the top image write here it ends*/
+
+
+.connect{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tasks{
+  border-radius: 10px;
+  box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+  margin: 50px 0;
+  background-image: url("../imgs/backgr3.jpg");
+  color: #1F2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 220px;
+  width: 250px;
+}
+.tasks i{
+  box-shadow: -8px -3px 1px #82b2ec;
+  color: #fff;
+  background-color: #4287f5;
+  border-radius: 50px;
+  padding: 25px 25px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.tasks h1{
+  margin: 10px 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 21px;
+}
+.tasks p{
+  margin: 0;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+
+/*the end of the address bar and beginning of the next*/
+
+
+
+
+.findus{
+  box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+    padding: 50px 60px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.findus img{
+    border-radius: 15px;
+    margin-top: 25px;
+}
+.typein{
+    margin: 0 20px;
+    color:#344966;
+    display: flex;
+    flex-direction: column;
+}
+.typein h1{
+    margin-bottom: 5px;
+}
+.typein p{
+    margin-top: 0;
+}
+.typein input{
+    border: 0.5px solid gray;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+}
+.cledencial{
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.cledencial input{
+    padding: 3px 20px;
+    border-color: gray;
+    height: 35px;
+}
+.sub{
+    margin-bottom: 17px;
+    padding: 3px 20px;
+    height: 35px;
+    width: 550px;
+}
+.thoughts{
+    margin-bottom: 17px;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    padding: 3px 20px;
+    width: 550px;
+    height: 150px;
+}
+.typein button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #327ac2;
+    border: 0px;
+    border-radius: 7px;
+    font-size: 20px;
+    height: 42px;
+    width: 200px;
+    gap: 10px;
+}
+
+
+/*this is the rating div next div before the footer */
+
+
+.ratings {
+  margin-left: 220px;
+  margin-right: 220px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #d0e4fc;
+  padding: 10px 30px;
+  border: 3px solid #327ac2;
+  box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+  border-radius: 15px;
+}
+.ratings i{
+  margin-bottom: 0;
+  color: #1F2937;
+  font-size: 60px;
+}
+.rate{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+}
+.rate p{
+  text-align: center;
+  font-size: larger;
+}
+.stars {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin: 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+}
+
+
+
+/*the need of all the section part and beginning of the footer*/
+footer .ul{
+    text-decoration: none;
+  }
+  
+  footer{
+    padding-top: 50px;
+    color: #fff;
+    background-color:#1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+  }
+  .done{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .quick{
+    border-left: 1px solid #4287f5;
+    width: 320px;
+    font-size: large;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quick h1{
+    padding: 20px 0px;
+    font-size: 29px;
+  }
+  .logobox{
+    width: 300px;
+    font-size: large;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .logobox img{
+    border: 1px solid #4878d6;
+    padding: 5px 5px;
+  }
+  .logobox ul{
+    margin: 0 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap:20px
+  }
+  .logobox i{
+    border: 1px solid #3e4c5f;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    color: #4287f5;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer a{
+    font-size: large;
+    color: #fff;
+  }
+  .list li{
+    padding-bottom: 20px;
+    list-style-type: none;
+  }
+  
+  
+  
+  /*this is the last div of the footer mapaddress*/
+  .mapaddress{
+    padding: 5px 0;
+    margin: 0 20px;
+    border-top: 1px solid #4287f5;
+    width: 1340px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 500px;
+  }
+  .mapaddress h1{
+    font-weight: 400;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mapaddress p{
+    font-size: larger;
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mapaddress i{
+    font-size: 20px;
+    color: #4287f5;
+  }
+  
+  
+  

@@ -1,0 +1,618 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.header {
+  margin: 0;
+background-color: #8caacf;
+padding: 0px;
+font-family: georgia, candara, "century gothic";
+display:flex;
+flex-direction: column;
+list-style-type: none;
+}
+
+/*the div socials css begins from his*/
+
+.motto{
+  color: #dbd9b8;
+}
+strong{
+color: #8caacf;
+}
+.socials
+ {
+  height: 40px;
+  background-color: #1F2937;
+  border: 1px solid #8caacf;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ }
+.socials ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 25px;
+}
+.socials i {
+  color: #8caacf;
+  font-size: large;
+}
+
+
+/*the next layer,div TITLES */
+
+.loc {
+height: 100px;
+padding: 0 50px;
+background-color: #fff;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+.findme{
+  width: 400px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.sub{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.findme i{
+ color: #4287f5;
+ font-size: 40px;
+}
+span{
+color: #1F2937;
+font-size: medium;
+font-weight: lighter;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sub a{
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: bolder;
+}
+a{
+  text-decoration: none;
+  color: #0349aa;
+}
+
+/*the next phase in the nav div*/
+
+.menu {
+  height: 70px;
+  background-color: #327ac2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 50px;
+  gap: 150px;
+}
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+nav a{
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #327ac2;
+  text-decoration: none;
+  font-family: poppins;
+  height: 50px;
+  gap: 10px;
+}
+nav a:hover{
+  background: #8caacf;
+  color: #fff;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+}
+nav .navigate li{
+  font-family: poppins, roboto;
+  font-size: 21px;
+  width: 100%;
+}
+nav .navigate {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+nav ul li{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+nav li:hover .dropdown li{
+  top: 0;
+  display: block;
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: column;
+}
+.dropdown li{
+  border-bottom: 2px solid #fff;
+}
+ul li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li:hover ul.dropdown{
+  display: block;
+}
+.searches{
+  width: 220px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.searches input{
+  height: 27px;
+  border-radius: 15px;
+  border: 1px solid #cbeef5;
+}
+.searches button{
+  border: 1px solid #cbeef5;
+  border-radius: 15px;
+  height: 30px;
+  width: 30px;
+}
+
+
+
+
+
+/*the next is sections now*/
+.slides{
+  border: 1px solid #8caacf;
+  margin: 0;
+  padding: 0;
+  height: 700px;
+  background-color: #8acc76;
+  background-image: linear-gradient(50deg, rgba(9, 27, 100, 0.9), rgba(2, 27, 65, 0.1)), url("../imgs/toilet\ cleanig\ materials\ resized.jpg");
+  background-size: cover;
+}
+.introduction{
+  padding: 30px 30px;
+  margin: 100px 50px;
+  width: 700px;
+  height: auto;
+  color: #fff;
+}
+.introduction h1{
+  display: flex;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  gap: 13px;
+}
+.introduction h2{
+  padding: 0;
+  margin: 0;
+  font-size: 65px;
+  font-family: poppins, poppins;
+}
+.introduction p{
+  font-size: 18px;
+}
+.introduction .please{
+  max-width: 340px;
+  display: flex;
+  justify-content: space-between;
+}
+.introduction .please button{
+  color: #fff;
+  background-color:#0349aa;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 19px;
+  width: 160px;
+  height: 50px;
+}
+.please i{
+  background-color: #fff;
+  color: #0d51d1;
+  border-radius: 5px;
+  padding: 6px 7px;
+}
+.please .special{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+/*part be back on this one three*/
+
+.services{
+  background-color: #E5E7EB;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.head{
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.head i{
+  color: #4287f5;
+  font-size: 40px;
+}
+
+.services h2{
+  width: 300px;
+  border-bottom: 4px solid #0d51d1;
+  padding-bottom: 5px;
+  margin: 0 550px;
+  color: #0b3652;
+  font-weight: 700px;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+
+}
+.serve{
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 40px
+}
+.pool{
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 60px;
+}
+.checkon {
+  background-color: #E5E7EB;
+  color: coral;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 13px;
+  width: 350px;
+  height: 140px;
+  border: 3px solid #0b3652;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
+}
+.checkon a{
+  color: #1F2937;
+}
+.checkon p{
+  margin: 0;
+  color: black;
+  font-size: 17px;
+  font-weight: 100px;
+
+}
+
+/*this the last of the layer*/
+
+.howwework{
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.howwework .top{
+  border-bottom: 4px solid #0d51d1;
+  padding: 10px;
+  margin: 30px 0;
+  color: #0b3652;
+  font-weight: 700px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.top i{
+  font-size: 50px;
+  color: #327ac2;
+}
+
+.all-items{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.signs{
+  border: 2px solid #1F2937;
+  background-color: #8caacf;
+  padding: 30px 30px;
+  border-radius: 100%;
+}
+.signs i{
+  font-size: 60px;
+}
+.touch{
+  padding: 55px 70px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  background-color: #327ac2;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.set{
+  width: 500px;
+  margin: 0px;
+  padding: 0px;
+
+}
+.set p{
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-size: 60px;
+  font-weight: lighter;
+}
+.set h2{
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: start;
+}
+.touch button{
+  color: #327ac2;
+  border: #dbd9b8;
+  height: 50px;
+  width: 180px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+/* the first div in this section*/
+.work{
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work h1{
+  color: #0d51d1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+}
+.work p{
+  text-align: center !important;
+  margin-top: 0;
+  font-weight: 400;
+  font-size: large;
+}
+
+/*end of the 3rd div the new one*/
+/*this is the div on cleint feedbacks*/
+
+.feedbacks{
+  background-image: url("../imgs/background.webp");
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mess{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.feed{
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.feed p{
+  font-weight: 450;
+  font-size: larger;
+}
+.back{
+  border: 1px solid #4e5563;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.back i{
+  font-size: 50px;
+  color: rgb(6, 83, 83);
+}
+.back span{
+
+}
+.tit{
+  width: 200px;
+  margin-top: 50px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #4287f5;
+}
+.tit i{
+  color: #327ac2;
+  font-size: 30px;
+}
+
+
+/*this is the end of a div and start of the footer*/
+
+
+footer .ul{
+  text-decoration: none;
+}
+
+footer{
+  padding-top: 50px;
+  color: #fff;
+  background-color:#1F2937;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+}
+.done{
+  display: flex;
+  flex-direction: row;
+
+}
+.quick{
+  border-left: 1px solid #4287f5;
+  width: 320px;
+  font-size: large;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quick h1{
+  padding: 20px 0px;
+  font-size: 29px;
+}
+.logobox{
+  width: 300px;
+  font-size: large;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+.logobox img{
+  border: 1px solid #4878d6;
+  padding: 5px 5px;
+}
+.logobox ul{
+  margin: 0 10px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  gap:20px
+}
+.logobox i{
+  border: 1px solid #3e4c5f;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  color: #4287f5;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer a{
+  font-size: large;
+  color: #fff;
+}
+.list li{
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+
+
+
+/*this is the last div of the footer mapaddress*/
+.mapaddress{
+  padding: 5px 0;
+  margin: 0 20px;
+  border-top: 1px solid #4287f5;
+  width: 1340px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 500px;
+}
+.mapaddress h1{
+  font-weight: 400;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.mapaddress p{
+  font-size: larger;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mapaddress i{
+  font-size: 20px;
+  color: #4287f5;
+}
+
+
