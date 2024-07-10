@@ -336,7 +336,10 @@ body{
     height: 35px;
     width: 550px;
 }
-.thoughts{
+textarea{
+  border-radius: 7px;
+  font-size: 20px;
+  outline: none;
     margin-bottom: 17px;
     display: flex;
     align-items: baseline;
@@ -352,11 +355,17 @@ body{
     color: #fff;
     background-color: #327ac2;
     border: 0px;
-    border-radius: 7px;
+    border-radius: 6px;
     font-size: 20px;
     height: 42px;
-    width: 200px;
+    width: 180px;
     gap: 10px;
+}
+.typein button:hover{
+  color: #4878d6;
+  background-color: #cbeef5;
+  cursor: pointer;
+  outline: none;
 }
 
 
