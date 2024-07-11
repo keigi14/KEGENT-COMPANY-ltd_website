@@ -22,8 +22,9 @@ I immersed myself in learning software development skills relevant to my project
      <div style="flex:1;padding-left:10px;">
           <img src="https://github.com/keigi14/kegent-company-website/blob/main/imgs/cleanin-tools.jpg?raw=true" width="800"/>
      </div>
-     <p>
-       ### The targeted Users of my website
+     
+### The targeted Users of my website
+   <p>    
 Define the purpose of a project: To establish and operate a professional cleaning service that meets the needs of residential and commercial clients in the country of Rwanda. The website gives you access to high-quality cleaning services that ensure cleanliness, hygiene, and customer satisfaction while maintaining profitability and fostering a positive reputation in the local market."
 Timeline: the website is buit by KABANDA Gislain, in a period of one month and i think its a short period comparing to the fact that i built it while entering the carrer of software development and i think its a whole different thing as a beginner to learn while working on such massive project.
 Target individual the website is made for: Residential Clients: Individuals and families who require regular or occasional cleaning services for their homes to maintain cleanliness and hygiene.
@@ -38,7 +39,7 @@ Educational Institutions: Schools, colleges, and universities that require regul
 
 # Application
 ## Screenshot
-<img src="https://github.com/keigi14/kegent-company-website/blob/main/imgs/2024-07-10%20(1).png?raw=true">
+<img src="https://github.com/keigi14/kegent-company-website/blob/main/imgs/2024-07-10%20(1).png?raw=true"></img!>
 ## challenges
 ### Situation
 Early in the development of our cleaning company application, we faced a significant technical challenge related to implementing real-time scheduling and availability checks for our cleaning services. Our goal was to provide customers with the ability to book services instantly while ensuring that the system could dynamically update availability based on real-time data.
