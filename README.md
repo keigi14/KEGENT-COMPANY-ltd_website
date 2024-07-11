@@ -12,10 +12,10 @@ Its a cleaning company website
 The project description can be found in the [Google_docs](https://docs.google.com/document/d/1zWrzzyWljvL7xmzQc3CZfyxLIs0MDXZRs12mJYbG1zA/edit?usp=sharing) Link
 ### Embracing Technology: A Journey into Software Development
 Growing up in KIGALI city, my fascination with technology was sparked by the few glimpses of computers I saw in movies and on TV. However, access to technology was limited, and opportunities to learn about software development seemed out of reach.
-As an African kid with a hunger for knowledge, I found myself drawn to the potential of technology to transform lives and communities. Despite the challenges, I started exploring software development with the little resources I could find�~@~Tonline tutorials, borrowed books, and occasional access to a shared computer at school.
+As an African kid with a hunger for knowledge, I found myself drawn to the potential of technology to transform lives and communities. Despite the challenges, I started exploring software development with the little resources I could find online tutorials, borrowed books, and occasional access to a shared computer at school.
 One day, while cleaning the local community center to earn some extra money, I overheard a conversation about the power of technology in creating opportunities. That conversation struck a chord with me. It wasn't just about coding; it was about using technology to solve real-world problems and make a difference.
 With determination and a few coding basics under my belt, I decided to channel my energy into a practical project: starting a cleaning company. It wasn't just about offering cleaning services; it was about leveraging technology to streamline operations, improve customer experience, and build a sustainable business model.
-I immersed myself in learning software development skills relevant to my project�~@~Tbuilding a website to showcase services, developing a simple CRM system to manage client bookings, and integrating online payment solutions for convenience.
+I immersed myself in learning software development skills relevant to my project building a website to showcase services, developing a simple CRM system to manage client bookings, and integrating online payment solutions for convenience.
 [check my LinkedIn for more on my story] (https://www.linkedin.com/in/k-g-94989a270/)
 ## Preview
 <div style="display:flex">
