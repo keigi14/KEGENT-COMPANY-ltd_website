@@ -23,7 +23,7 @@ I immersed myself in learning software development skills relevant to my project
           <img src="https://github.com/keigi14/kegent-company-website/blob/main/imgs/cleanin-tools.jpg?raw=true" width="800"/>
      </div>
      <p>
-### The targeted Users of my website
+       ### The targeted Users of my website
 Define the purpose of a project: To establish and operate a professional cleaning service that meets the needs of residential and commercial clients in the country of Rwanda. The website gives you access to high-quality cleaning services that ensure cleanliness, hygiene, and customer satisfaction while maintaining profitability and fostering a positive reputation in the local market."
 Timeline: the website is buit by KABANDA Gislain, in a period of one month and i think its a short period comparing to the fact that i built it while entering the carrer of software development and i think its a whole different thing as a beginner to learn while working on such massive project.
 Target individual the website is made for: Residential Clients: Individuals and families who require regular or occasional cleaning services for their homes to maintain cleanliness and hygiene.
@@ -37,25 +37,25 @@ Educational Institutions: Schools, colleges, and universities that require regul
 </div>
 
 # Application
-##Screenshot
+## Screenshot
 <img src="https://github.com/keigi14/kegent-company-website/blob/main/imgs/2024-07-10%20(1).png?raw=true">
-##challenges
-###Situation
+## challenges
+### Situation
 Early in the development of our cleaning company application, we faced a significant technical challenge related to implementing real-time scheduling and availability checks for our cleaning services. Our goal was to provide customers with the ability to book services instantly while ensuring that the system could dynamically update availability based on real-time data.
-###Task
+### Task
 The task was to develop a robust scheduling system that could handle concurrent bookings, maintain data consistency across multiple users, and integrate seamlessly with our existing database and frontend interface. This required us to implement complex business logic to check service availability, manage overlapping appointments, and ensure accurate time slot management.
-###Action
+### Action
 To address this challenge, I took the following actions:
 Detailed Planning and Requirements Analysis: I conducted thorough discussions with stakeholders to understand the exact requirements and expectations for the scheduling system. This involved identifying key features such as real-time availability updates, handling of overlapping bookings, and ensuring a smooth user experience.
 Design and Architecture: I collaborated closely with the development team to design a scalable architecture using Django's framework. We implemented a robust backend system that utilized PostgreSQL for efficient data storage and retrieval. We designed algorithms to manage booking conflicts and optimize time slot availability dynamically.
 Implementation and Testing: I led the implementation phase, breaking down the complex scheduling logic into manageable components. We implemented automated tests to validate the system's behavior under various scenarios, including peak booking times and concurrent user interactions.
 Integration and Optimization: We integrated asynchronous tasks and caching mechanisms to enhance performance and responsiveness. This included leveraging Django's caching framework and optimizing database queries to minimize latency during availability checks.
-###Result
+### Result
 As a result of these efforts:
 Improved User Experience: Customers can now book cleaning services in real-time with confidence, knowing that the system accurately reflects service availability.
 Increased Efficiency: The scheduling system streamlined our operations, reducing manual oversight and allowing us to handle a larger volume of bookings without compromising on service quality.
 Positive Feedback: Customers have provided positive feedback on the intuitive booking process and the reliability of the scheduling system, contributing to improved customer satisfaction and retention.
-##links
+## links
 
 [Cleaning_company_website] (https://keigi14.github.io/kegent-company-website/)
 [My LinkedIn profile] (https://www.linkedin.com/in/k-g-94989a270/)
