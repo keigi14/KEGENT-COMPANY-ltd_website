@@ -580,5 +580,16 @@ footer .ul{
     font-size: 20px;
     color: #4287f5;
   }
+  @media (min-width: 600px) {
+    .container {
+      width: 80%;
+    }
+  }
   
+  /* For mobile phones */
+  @media (max-width: 599px) {
+    .container {
+      width: 100%;
+    }
+  }
   

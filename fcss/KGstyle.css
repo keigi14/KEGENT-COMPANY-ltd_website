@@ -1,9 +1,10 @@
+
 body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  height: 100svh;
+
   display: flex;
   flex-direction: column;
  
@@ -172,7 +173,7 @@ ul li:hover ul.dropdown{
   display: block;
 }
 .searches{
-  width: 220px;
+ width: 220px;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -461,10 +462,12 @@ ul li:hover ul.dropdown{
   flex-direction: row;
   gap: 30px;
 }
+
 .feed{
+  width: 300px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 15px;
-  padding: 50px 50px;
+  padding: 30px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -501,6 +504,15 @@ ul li:hover ul.dropdown{
   color: #327ac2;
   font-size: 30px;
 }
+/*.swiper-wrapper{
+  display: grid;
+  gap: 0px;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}*/
 
 
 /*this is the end of a div and start of the footer*/
@@ -616,5 +628,19 @@ footer a{
   font-size: 20px;
   color: #4287f5;
 }
+/* For tablets and larger screens */
 
+
+@media (min-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 599px) {
+  .container {
+    width: 100%;
+  }
+}
 
