@@ -11,12 +11,13 @@ body{
 }
 
 .header {
-  margin: 0;
+margin: 0;
 background-color: #8caacf;
 padding: 0px;
 font-family: georgia, candara, "century gothic";
 display:flex;
 flex-direction: column;
+flex-wrap: wrap;
 list-style-type: none;
 }
 
