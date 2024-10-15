@@ -1,51 +1,184 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gislain">
+  <title>KEGENT Company-homepage</title>
+  <link rel="stylesheet" href="fcss/KGstyle.css">
+  
+  <script src="https://kit.fontawesome.com/f7b93df9fb.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <main class="main">
-        <div class="calculator">
-            <div class="screen">
-                <div class="screen-last" id="lastOperationScreen"></div>
-                <div class="screen-current" id="currentOperationScreen">0</div>
-            </div>
-            <div class="buttons-grid">
-                <button class="btn" onclick="appendNumber('7')">7</button>
-                <button class="btn" onclick="appendNumber('8')">8</button>
-                <button class="btn" onclick="appendNumber('9')">9</button>
-                <button class="btn" onclick="setOperation('÷')">÷</button>
-
-                <button class="btn" onclick="appendNumber('4')">4</button>
-                <button class="btn" onclick="appendNumber('5')">5</button>
-                <button class="btn" onclick="appendNumber('6')">6</button>
-                <button class="btn" onclick="setOperation('×')">×</button>
-
-                <button class="btn" onclick="appendNumber('1')">1</button>
-                <button class="btn" onclick="appendNumber('2')">2</button>
-                <button class="btn" onclick="appendNumber('3')">3</button>
-                <button class="btn" onclick="setOperation('−')">−</button>
-
-                <button class="btn" id="pointBtn" onclick="appendPoint('.')">.</button>
-                <button class="btn" onclick="appendNumber('0')">0</button>
-                <button class="btn btn-red" id="equalsBtn" onclick="evaluate()">=</button>
-                <button class="btn" onclick="setOperation('+')">+</button>
-                <button class="btn btn-red span-2" id="clearBtn" onclick="clear()">CLEAR</button>
-                <button class="btn btn-blue span-2" id="deleteBtn" onclick="deleteNumber()">DELETE</button>
-            </div>
+  <body>
+      <div class="header">
+        <div class="socials">
+          <div class="motto"><p>clean <strong>work</strong>,  clean <strong>environment</strong></p></div>
+          <ul>
+          <li><a href="#" target="_blank" rel="noopener" title="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="#" target="_blank" rel="noopener" tiStle="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" target="_blank" rel="noopener" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank" rel="noopener" title="X"><i class="fab fa-twitter"></i></a></li>
+        </ul>
         </div>
-    </main>
-    <footer class="footer">
-        <p>
-            Copyright © <script>document.write(new Date().getFullYear())</script> KABANDA Gislain
-        </p>
-        <a href="#" target="_blank">
-            https://github.com/keigi14/Calculator-
-        </a>
-    </footer>
-    <script src="calculator.js" defer></script>
-</body>
+        <div class="loc">
+          <div class="findme">
+            <i class="fa-solid fa-phone"></i>
+            <div class="sub"><span>Call Us Please</span><a href="tel:+250788565652">(+250)-788-565652</a></div></div>
+          <div class="findme">
+            <i class="fa-regular fa-envelope"></i>
+            <div class="sub"><span>Send an Email</span><a href="emmakabanda@gmail.com">emmakabanda@gmail.com</a></div></div>
+          <div class="findme">
+            <i class="fa-solid fa-clock"></i>
+            <div class="sub"><span>Open Time (Mon-Fri)</span><a href="#">From:8AM To:05PM</a></div></div>
+          <div class="findme">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="sub"><span>Office Location</span><a href="https://maps.app.goo.gl/drEb79qKS9eUM8dc7">st.Famille Kigali,Rwanda</a></div></div>
+        </div>
+        
+        <div class="menu">
+          <img src="imgs\logodone.jpg" alt="logo" height="70" width="180">
+          <nav>
+            <ul class="navigate">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About<i class="fa-solid fa-caret-down"></i></a>
+               <ul class="dropdown">
+                  <li><a href="mission.html">vision</a></li>
+                  <li><a href="mission.html">mission</a></li>
+                </ul></li>
+                <li><a href="#">Services <i class="fa-solid fa-caret-down"></i></a>
+                  <ul class="dropdown">
+                  <li><a href="gardening.html">Garden Mantainance</a></li>
+                  <li><a href="cleaningoffice.html">Office Custodians</a></li>
+                  <li><a href="streetcleaning.html">Street Cleaning</a></li>
+                  <li><a href="Window scrubbers.html">Window scrubbers</a></li>
+                  <li><a href="Hygeinematerials.html">Products,Materials</a></li>
+                  <li><a href="AirBnB.html">AirBnB &Residencial</a></li>
+                </ul></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="reachus.html">Contact</a>
+              </ul>
+              <div class="searches"><input id="search" type="text" /><button><i class="fa-solid fa-magnifying-glass"></i></button></div>
+          </nav>
+        </div>
+      </div>
+      <section>
+          <div class="slides">
+            <div class="introduction">
+            <h1><i class="fa-regular fa-face-smile fa-spin fa-spin-reverse" style="color: #cbf804; font-size: 30px;"></i>Smart, Neat & Healthy<h1>
+              <h2>Welcome To Kegent Company Ltd Website</h2>
+            <p>Rwanda's best hygiene, cleaning commercial services and most trusted company in the country!
+              find your way around the webside, We Are Here To Serve You. contact us or click below.
+            </p>
+            <div class="please">
+            <button class="special">Contact Us<i class="fa-solid fa-arrow-right"></i></button>
+            <button>About Us</button>
+            </div>
+          </div>
+      </div>
+             <div class=services>
+              <div class="head"><i class="fa-solid fa-hand-holding-heart"></i> <h1>services</h1></div>
+               <h2>what we offer</h2>
+               <div class="serve">
+                <div class="pool">
+                <div class="checkon"><h1><a href="gardening.html">Garden Mantainance</a></h1>
+                <p>cutting grass, Prune and edge plants regularly, Wily weeds, daily watering, Gutters for leaves, pond gardens care</p></div>
+                <div class="checkon"><h1><a href="cleaningoffice.html">Office Custodians</a></h1>
+                  <p>Dusting, mopping, and vacuuming your office for a completely clean and healthy working environment.</p></div>
+                <div class="checkon"><h1><a href="compound&street-clean.html">Street Cleaning</a>
+                </h1><p>sweeps pavements, gutters and roadways with hand broom or mechanical sweeper, collects litter using hand tools</p></div>
+                </div>
+                <div class="pool">
+                <div class="checkon"><h1><a href="Window scrubbers.html">Window Scrubbers</a></h1>
+                  <p>Dust all furniture, shelves and decor., Sweeping and mopping floors, Emptying trash,full house cleaning and sweeping</p></div>
+                <div class="checkon"><h1><a href="Hygeinematerials.html">Products,Materials</a></h1>
+                  <p>we use new and high quality cleaning product on the market, supply and delivery in a high numbers,</p></div>
+                <div class="checkon"><h1><a href="#">AirBnB &Residencial</a></h1>
+                  <p>we take calls from different clients or property ownerd who need their house or hotel clean for certian occassion, we can help in decoration too.</p></div>
+                </div>
+              </div>
+          </div>
+           <div class="howwework">
+            <h2 class="top"><i class="fa-solid fa-gears"></i>how we work</h2>
+            <div class="all-items">
+               <div class="work">
+                <div class="signs"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i></div><h1>Contact Us</h1>
+                <p>send an email or call us, fill out the booking details if you can't reach us by contract</p></div>
+               <div class="work">
+               <div class="signs"><span><i class="fa-solid fa-magnifying-glass-location"></i></div><h1>Collect Transactions</h1>
+                <p>we locate the place according to the details the client provides and get there</p></div>
+               <div class="work">
+               <div class="signs"><i class="fa-solid fa-toolbox"></i></div><h1>Clean to Neat</h1>
+                <p>then we come and do the cleaning to the last dirt,we make sure you money is worth it</p></div>
+                </div>
+                <div class="touch">
+                  <div class="set"><p>Smart Living Only</p><h2>Neat & Healthy</h2></div><button>Get In Touch <i class="fa-solid fa-arrow-right"></i></button></div>
+             </div>
+             
+                <div class="feedbacks">
+                  <div class="tit"><i class="fa-solid fa-users"></i><h1>feedbacks</h1></div>
+                
+                    
+                    <div class="mess">
+                    <div class="feed"><p>The cleaning team did an excellent job! My house has never looked cleaner. They were thorough and paid attention to every detail.</p><div class="back"><i class="fa-regular fa-circle-user"></i><span><h1>Kamali Joseph</h1><p>company client</p></span></div></div>
+                    <div class="feed"><p>I appreciate how accommodating the company was with scheduling. They were punctual and completed the job in a timely manner.</p><div class="back"><i class="fa-regular fa-circle-user"></i><span><h1>Calim Nyamwasa</h1><p>individial client</p></span></div></div>
+                    <div class="feed"><p>The quality of service exceeded my expectations. I will definitely be using this cleaning service again in the future</p><div class="back"><i class="fa-regular fa-circle-user"></i><span><h1>chris stallon</h1><p>company client</p</span></div></div>
+                  <!--  <div class="feed"><p>While the overall cleaning was good, I noticed a few areas that were missed. It would be great if the team could pay closer attention to corners and baseboards next time</p><div class="back"><i class="fa-regular fa-circle-user"></i><span><h1>micheal roger</h1><p>individial client</p></span></div></div>
+                    <div class="feed"><p>I had some difficulty reaching customer service when I had a question about my appointment. It would be helpful if there were more communication channels available.</p><div class="back"><i class="fa-regular fa-circle-user"></i><span><h1>peter maxwell</h1><p>company client</p></span></div></div>
+                    <div class="feed"><p>The cleaners arrived a bit later than the scheduled time, which was inconvenient for me. Punctuality is something that could be improved.</p><div class="back"><i class="fa-regular fa-circle-user"></i><span><h1>Musoni Yves</h1><p>individial client</p></span></div></div>
+                    <div class="feed"><p>I noticed a few streaks on the windows after the cleaning. It would be helpful if the team used a streak-free cleaner or paid more attention to detail when cleaning glass surfaces.</p><div class="back"><i class="fa-regular fa-circle-user"></i><span><h1>Mfura moses</h1><p>company client</p></span></div></div>
+                    <div class="feed"><p>I noticed a few streaks on the windows after the cleaning. It would be helpful if the team used a streak-free cleaner or paid more attention to detail when cleaning glass surfaces.</p><div class="back"><i class="fa-regular fa-circle-user"></i><span><h1>Mfura moses</h1><p>company client</p></span></div></div>-->
+                  </div> 
+              </div>
+  </section>
+      <footer>
+       <div class="done">
+        <div class="logobox">
+          <img src="imgs\logodone.jpg" width="160" height="65">
+        <p>We are Rwanda's most trusted cleaning agency that's making the country healthier through our excellent and seamless cleaning services.</p>
+        <ul class="list">
+        <li><a href="#" target="_blank" rel="noopener" title="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="#" target="_blank" rel="noopener" title="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank" rel="noopener" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#" target="_blank" rel="noopener" title="X"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class ="quick">
+        <h1>Our Service</h1>
+        <ul class="list">
+          <li><a href="gardening.html">Garden Mantainance</a></li>
+          <li><a href="cleaningoffice.html">Office Custodians</a></li>
+          <li><a href="streetcleaning.html">Street Cleaning</a></li>
+          <li><a href="Window scrubbers.html">Window scrubbers</a></li>
+          <li><a href="Hygeinematerials.html">Products,Materials</a></li>
+          <li><a href="AirBnB.html">AirBnB &Residencial</a></li>
+        </ul>
+      </div>
+        <div class = "quick">
+          <h1>quick access</h1>
+          <ul class="list">
+            <li><a href="mission.html">What We Do</a></li>
+            <li><a href="reachus.html">Get In Touch</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="https://maps.app.goo.gl/drEb79qKS9eUM8dc7">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class = "quick">
+          <h1>Contact Us</h1>
+            <ul class="list">
+              <li><a href="tel:+250788565652">(+250)-788-565652</a></li>
+              <li><a href="emmakabanda@gmail.com">emmakabanda@gmail.com</a></li>
+              <li><a href="https://maps.app.goo.gl/drEb79qKS9eUM8dc7">KN 1 St, Kigali, Rwanda</a></li>
+              <li><a href="#">Mon-Sun (08am-07pm)</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class='mapaddress'>
+          <h1><i class="fa-solid fa-registered"></i><a href="https://maps.app.goo.gl/drEb79qKS9eUM8dc7">2024 - Kegent Company Limited</a></h1>
+          <p><i class="fa-solid fa-copyright"></i><a href="#">website Creators: Gislain</a></p>
+        </div>
+      </footer>
+      
+     
+  </body>
 </html>
