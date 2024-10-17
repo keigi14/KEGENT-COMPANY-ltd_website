@@ -23,7 +23,7 @@ operatorButtons.forEach((button) => {
   button.addEventListener('click', () => setOperation(button.textContent));
 });
 
-equalsButton.addEventListener('click', evaluate);
+equalsButton.addEventListener('click', performEvaluation);
 clearButton.addEventListener('click', clear);
 deleteButton.addEventListener('click', deleteNumber);
 pointButton.addEventListener('click', appendPoint);
@@ -62,14 +62,14 @@ function deleteNumber() {
 }
 
 function setOperation(operator) {
-  if (currentOperation !== null) evaluate();
+  if (currentOperation !== null) performEvaluation();
   firstOperand = currentOperationScreen.textContent;
   currentOperation = operator;
   lastOperationScreen.textContent = `${firstOperand} ${currentOperation}`;
   shouldResetScreen = true;
 }
 
-function evaluate() {
+function performEvaluation() {
   if (currentOperation === null || shouldResetScreen) return;
   if (currentOperation === '÷' && currentOperationScreen.textContent === '0') {
     alert("You can't divide by 0!");
@@ -81,7 +81,27 @@ function evaluate() {
   );
   lastOperationScreen.textContent = `${firstOperand} ${currentOperation} ${secondOperand} =`;
   currentOperation = null;
+
+  // Log the calculation to the backend (ensure this is working)
+  logCalculation(
+    `${firstOperand} ${currentOperation} ${secondOperand} = ${currentOperationScreen.textContent}`
+  );
 }
+
+
+function logCalculation(calculation) {
+  fetch('http://localhost:3000/log', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ calculation }),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log('Success:', data))
+    .catch((error) => console.error('Error:', error));
+}
+
 
 function roundResult(number) {
   return Math.round(number * 1000) / 1000;
@@ -90,7 +110,7 @@ function roundResult(number) {
 function handleKeyboardInput(e) {
   if (e.key >= 0 && e.key <= 9) appendNumber(e.key);
   if (e.key === '.') appendPoint();
-  if (e.key === '=' || e.key === 'Enter') evaluate();
+  if (e.key === '=' || e.key === 'Enter') performEvaluation();
   if (e.key === 'Backspace') deleteNumber();
   if (e.key === 'Escape') clear();
   if (e.key === '+' || e.key === '-' || e.key === '*' || e.key === '/')
@@ -137,3 +157,30 @@ function operate(operator, a, b) {
       return null;
   }
 }
+// Existing calculator code ...
+	
+	 // Add event listener for the History button
+	 const historyButton = document.getElementById('historyBtn');
+	 historyButton.addEventListener('click', fetchHistory);
+	
+	 // Fetch history from the backend
+	 function fetchHistory() {
+	   fetch('http://localhost:3000/history')
+	       .then(response => response.json())
+	           .then(data => {
+	                 console.log('Calculation history:', data.calculations);
+	                       displayHistory(data.calculations);
+	                           })
+	                               .catch(error => {
+	                                     console.error('Error fetching history:', error);
+	                                         });
+	                                         }
+	
+	                                         // Display history in an alert box or console
+	                                         function displayHistory(calculations) {
+	                                           let historyText = 'Calculation History:\n';
+	                                             calculations.forEach(calc => {
+	                                                 historyText += `${calc.operation} = ${calc.result} (at ${new Date(calc.timestamp).toLocaleTimeString()})\n`;
+	                                                   });
+	                                                     alert(historyText);
+	             }

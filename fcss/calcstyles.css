@@ -86,3 +86,18 @@ margin-top: 80px;
     grid-column: span 2;
   }
   
+  #historyBtn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#historyBtn:hover {
+    background-color: #45a049;
+}

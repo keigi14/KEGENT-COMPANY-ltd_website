@@ -31,11 +31,13 @@
 
                 <button class="btn" id="pointBtn" onclick="appendPoint('.')">.</button>
                 <button class="btn" onclick="appendNumber('0')">0</button>
-                <button class="btn btn-red" id="equalsBtn" onclick="evaluate()">=</button>
+                <button class="btn btn-red" id="equalsBtn" onclick="performEvaluation()">=</button>
                 <button class="btn" onclick="setOperation('+')">+</button>
                 <button class="btn btn-red span-2" id="clearBtn" onclick="clear()">CLEAR</button>
                 <button class="btn btn-blue span-2" id="deleteBtn" onclick="deleteNumber()">DELETE</button>
             </div>
+             <!-- New History Button -->
+             <button class="btn" id="historyBtn">History</button>
         </div>
     </main>
     <footer class="footer">
