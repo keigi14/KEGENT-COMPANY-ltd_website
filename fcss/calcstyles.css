@@ -1,0 +1,88 @@
+body {
+margin-left: 300px;
+margin-top: 80px;
+}
+.calculator {
+    width: 300px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #aaa;
+  }
+  
+  .screen {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #eee;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .screen-last {
+    min-height: 32px;
+    font-size: 20px;
+  }
+  
+  .screen-current {
+    min-height: 64px;
+    font-size: 40px;
+  }
+  
+  .buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .btn {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #eee;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn:active {
+    background-color: #ccc;
+  }
+  
+  .btn-red {
+    background-color: #faa;
+    color: white;
+  }
+  
+  .btn-red:hover {
+    background-color: #e99;
+  }
+  
+  .btn-red:active {
+    background-color: #d88;
+  }
+  
+  /* Blue Buttons */
+  .btn-blue {
+    background-color: #aaf;
+    color: white;
+  }
+  
+  .btn-blue:hover {
+    background-color: #99e;
+  }
+  
+  .btn-blue:active {
+    background-color: #88d;
+  }
+  
+  /* Wider Buttons */
+  .span-2 {
+    grid-column: span 2;
+  }
+  

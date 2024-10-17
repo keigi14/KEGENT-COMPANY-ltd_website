@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fcss\calcstyles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="main">
+        <div class="calculator">
+            <div class="screen">
+                <div class="screen-last" id="lastOperationScreen"></div>
+                <div class="screen-current" id="currentOperationScreen">0</div>
+            </div>
+            <div class="buttons-grid">
+                <button class="btn" onclick="appendNumber('7')">7</button>
+                <button class="btn" onclick="appendNumber('8')">8</button>
+                <button class="btn" onclick="appendNumber('9')">9</button>
+                <button class="btn" onclick="setOperation('÷')">÷</button>
+
+                <button class="btn" onclick="appendNumber('4')">4</button>
+                <button class="btn" onclick="appendNumber('5')">5</button>
+                <button class="btn" onclick="appendNumber('6')">6</button>
+                <button class="btn" onclick="setOperation('×')">×</button>
+
+                <button class="btn" onclick="appendNumber('1')">1</button>
+                <button class="btn" onclick="appendNumber('2')">2</button>
+                <button class="btn" onclick="appendNumber('3')">3</button>
+                <button class="btn" onclick="setOperation('−')">−</button>
+
+                <button class="btn" id="pointBtn" onclick="appendPoint('.')">.</button>
+                <button class="btn" onclick="appendNumber('0')">0</button>
+                <button class="btn btn-red" id="equalsBtn" onclick="evaluate()">=</button>
+                <button class="btn" onclick="setOperation('+')">+</button>
+                <button class="btn btn-red span-2" id="clearBtn" onclick="clear()">CLEAR</button>
+                <button class="btn btn-blue span-2" id="deleteBtn" onclick="deleteNumber()">DELETE</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>
+            Copyright © <script>document.write(new Date().getFullYear())</script> KABANDA Gislain
+        </p>
+        <a href="#" target="_blank">
+            https://github.com/keigi14/Calculator-
+        </a>
+    </footer>
+    <script src="\script\calculator.js" defer></script>
+</body>
+</html>
